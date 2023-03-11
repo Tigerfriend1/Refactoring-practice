@@ -2,7 +2,7 @@
 ---
 ### 1. 개요
 - 학생들의 이름과 성적을 받아 저장하는 기본적인 프로그램이다.
-- JAVA언어로 작성된 st파일과 ScoreReportMain파일로 이루어져 있다.
+- Java언어로 작성된 st파일과 ScoreReportMain파일로 이루어져 있다.
 
 ### 2. Major Refactoring
 - 클래스명, 변수명
