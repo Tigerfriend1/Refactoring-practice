@@ -7,6 +7,8 @@
 
 ## 📌 사용언어
 - Java
+- Eclipse
+- MacOS ARM64 
 
 ## 📌 설명
 ### 1. ScoreReport
