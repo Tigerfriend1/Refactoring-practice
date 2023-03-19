@@ -1,4 +1,3 @@
-
 import java.util.Enumeration;
 import java.util.Vector;
 
@@ -19,8 +18,6 @@ class Customer {
 	};
 
 	public String statement() {
-		//double totalAmount = 0;
-		//int frequentRenterPoints = 0;
 		Enumeration rentals = _rentals.elements();
 		String result = "Rental Record for " + getName() + "\n";
 		while (rentals.hasMoreElements()) {
@@ -29,7 +26,7 @@ class Customer {
 			//frequentRenterPoints += each.getFrequentRenterPoints();
 
 			// show figures for this rental
-			result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(each._movie.getCharge(each)) + "\n";
+			result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(each.getCharge()) + "\n";
 			//totalAmount += each.getCharge();
 		}
 
@@ -45,7 +42,7 @@ class Customer {
 		Enumeration rentals = _rentals.elements();
 		while (rentals.hasMoreElements()) {
 			Rental each = (Rental) rentals.nextElement();
-			result += each._movie.getCharge(each);
+			result += each.getCharge();
 		}
 		return result;
 	}
@@ -55,7 +52,7 @@ class Customer {
 		Enumeration rentals = _rentals.elements();
 		while (rentals.hasMoreElements()) {
 			Rental each = (Rental) rentals.nextElement();
-			result += each._movie.getFrequentRenterPoints(each);
+			result += each.getFrequentRenterPoints();
 		}
 		return result;
 	}
