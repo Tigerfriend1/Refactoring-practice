@@ -29,7 +29,7 @@ class Customer {
 			//frequentRenterPoints += each.getFrequentRenterPoints();
 
 			// show figures for this rental
-			result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(each.getCharge()) + "\n";
+			result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(each._movie.getCharge(each)) + "\n";
 			//totalAmount += each.getCharge();
 		}
 
@@ -45,7 +45,7 @@ class Customer {
 		Enumeration rentals = _rentals.elements();
 		while (rentals.hasMoreElements()) {
 			Rental each = (Rental) rentals.nextElement();
-			result += each.getCharge();
+			result += each._movie.getCharge(each);
 		}
 		return result;
 	}
@@ -55,7 +55,7 @@ class Customer {
 		Enumeration rentals = _rentals.elements();
 		while (rentals.hasMoreElements()) {
 			Rental each = (Rental) rentals.nextElement();
-			result += each.getFrequentRenterPoints();
+			result += each._movie.getFrequentRenterPoints(each);
 		}
 		return result;
 	}
