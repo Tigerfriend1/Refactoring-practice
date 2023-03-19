@@ -8,3 +8,9 @@
 ## 사용언어
 - Java
 
+## 설명
+### 1. ScoreReport
+- 학생들의 성적을 입력하여 출력하는 프로그램
+- 설명으로 이동 : [ScoreReport](https://github.com/Tigerfriend1/Refactoring-practice/tree/main/ScoreReport)
+
+### 2. 
