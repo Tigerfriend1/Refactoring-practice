@@ -18,3 +18,8 @@
 ### 2. VideoRentalShop
 - 고객에게 비디오를 출시일, 연령별로 금액을 달리하여 대여해주는 프로그램
 - 설명으로 이동 : [VideoRentalShop](https://github.com/Tigerfriend1/Refactoring-practice/tree/main/VideoRentalShop)
+
+
+### 3. PuzzleBuilder
+- 낱말 퍼즐을 만드는 프로그램
+- 현재 Refactoring 진행중
