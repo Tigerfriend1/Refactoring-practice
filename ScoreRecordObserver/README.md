@@ -1,3 +1,5 @@
-## ScoreRecordObserver
-
-### Observer 패턴을 적용하여 수정하자!
+## 📌ScoreRecordObserver
+---
+### 1. 개요
+- 점수를 저장하고 출력하는 기본적인 프로그램이다.
+- 하지만 최대, 최소값만 출력하는 등 부가적인 기능을 추가하고자 할때, Observer패턴으로 리팩토링하여 의존성을 줄인다.
