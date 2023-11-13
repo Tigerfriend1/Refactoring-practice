@@ -9,7 +9,7 @@ public class Calculator {
     public static List<Integer> inputIntegers() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter integer ( 0 or minus for Exit)");
-        List<Integer> numberList = new ArrayList<>();
+        List<Integer> numberList = createList();
         while (true) {
             int number = scanner.nextInt();
             if (isNaturalNum(number))
@@ -19,6 +19,10 @@ public class Calculator {
         }
         scanner.close();
         return numberList;
+    }
+
+    private static ArrayList<Integer> createList() {
+        return new ArrayList<>();
     }
 
     private static boolean isNaturalNum(int number) {
